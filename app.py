@@ -153,4 +153,4 @@ col1, col2 = st.columns([3, 1])
 with col1:
     st.markdown("Made with ❤️ using Streamlit and Google Text-to-Speech")
 with col2:
-    st.markdown("<a href='https://github.com/yourusername/text-to-speech-app' target='_blank'>GitHub Repository</a>", unsafe_allow_html=True)
+    st.markdown("<a href='https://github.com/Nikhilesh-hub/TTS-Streamlit-App.git' target='_blank'>GitHub Repository</a>", unsafe_allow_html=True)
