@@ -35,9 +35,12 @@ streamlit run app.py
 
 ## Requirements
 
-- Python 3.7 or higher
+- Python 3.10 or higher (Python 3.10.12 recommended for deployment)
 - Streamlit 1.23.0
 - gTTS 2.3.2 (Google Text-to-Speech)
+- Pillow 9.5.0
+- NumPy 1.20.0 or higher
+- Pandas 1.3.0 or higher
 
 ## Note
 
@@ -59,3 +62,19 @@ This app uses Google Text-to-Speech (gTTS), which requires an internet connectio
 - **Render**: Easy deployment with automatic builds from GitHub
 - **Railway**: Simple deployment with GitHub integration
 - **Self-hosting**: Deploy on your own server or cloud instance
+
+## Troubleshooting
+
+### Deployment Issues
+
+- **Pillow Installation Failures**: If you encounter errors with Pillow installation during deployment, ensure you're using a compatible Python version (3.10.x recommended) and that Pillow is explicitly listed in requirements.txt.
+
+- **Dependency Conflicts**: Some newer Python versions (like 3.13.x) may have compatibility issues with certain packages. If you encounter build errors, try specifying Python 3.10.12 in your runtime.txt file.
+
+- **Memory Errors**: If you encounter memory errors during deployment, try reducing the size of your dependencies or upgrading to a higher tier on your hosting platform.
+
+### Local Development Issues
+
+- **Audio Not Playing**: Ensure your browser supports HTML5 audio playback.
+
+- **gTTS API Errors**: If you encounter errors with the Google TTS API, check your internet connection and verify that the API is accessible from your location.
